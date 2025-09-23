@@ -1,0 +1,15 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+cmd = "sh -c 'mkdir -p ./tmp && go mod tidy && go build -o ./tmp/app ./cmd/aggregator'"
+bin = "tmp/app"
+include_ext = ["go"]
+exclude_dir = ["tmp", "vendor"]
+delay = 100
+
+[log]
+time = true
+
+[color]
+main = "magenta"
