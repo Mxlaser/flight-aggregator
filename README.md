@@ -1,6 +1,5 @@
 # Flight Aggregator (Go)
 
-Conforme au nouvel énoncé :
 - **http.Server** + **http.ServeMux** (2 routes)
 - `GET /health` → **200 OK**
 - `GET /flight` → client HTTP vers 2 APIs, **json.NewDecoder** → structs, tri
